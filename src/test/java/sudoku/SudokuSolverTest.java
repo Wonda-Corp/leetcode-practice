@@ -44,5 +44,7 @@ class SudokuSolverTest {
   @MethodSource("providerSudokuTestData")
   void isValidSudokuShouldPerformCorrect(char[][] board, boolean expected) {
     assertEquals(expected, SudokuSolver.isValidSudoku(board));
+    assertEquals(expected, SudokuSolver.isValidSudoku2(board));
+    assertEquals(expected, SudokuSolver.isValidSudoku3(board));
   }
 }
